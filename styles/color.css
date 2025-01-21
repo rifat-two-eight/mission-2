@@ -220,9 +220,10 @@ a {
   gap: 10px;
 }
 .nov19 {
-  background-color: #05d4dfca;
+  background-color: #05d4dfe1;
   padding: 10px;
   width: 150px;
+  color: white;
   text-align: center;
   border-radius: 8px;
   position: relative;
@@ -234,6 +235,7 @@ a {
   background-color: #5d58efd3;
   padding: 5px;
   width: 100px;
+  color: white;
   text-align: center;
   border-radius: 8px;
   position: relative;
@@ -257,6 +259,35 @@ a {
   justify-content: center;
   margin-top: 30px;
   padding-bottom: 20px;
+}
+.footer-main {
+  background-color: #01adfd81;
+  padding: 50px;
+}
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-div1 {
+  width: 45%;
+}
+.footer-1st {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: -5px;
+}
+.anchor {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.anchor > a,
+.about-schl,
+.kids-h,
+.kids-p,
+.keep {
+  color: #36393ade;
 }
 
 /* Responsive */
@@ -345,10 +376,11 @@ a {
     height: 105px;
   }
   .nov20 {
-    background-color: #5d58efd3;
+    background-color: #5d58efd1;
     padding: 5px;
     width: 100px;
     text-align: center;
+    color: white;
     border-radius: 8px;
     position: relative;
     bottom: 35px;
@@ -361,6 +393,16 @@ a {
   }
   .black-div-stories {
     padding-bottom: 20px;
+    margin-top: 15px;
+  }
+  .footer-flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-div1 {
+    width: 100%;
+  }
+  .keep-tch {
     margin-top: 15px;
   }
 }
