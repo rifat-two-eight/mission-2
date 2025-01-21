@@ -289,7 +289,35 @@ a {
 .keep {
   color: #36393ade;
 }
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  background: #f8f8f8;
+  padding: 10px 0;
+  position: relative;
+  margin: 0 80px;
+}
 
+.marquee {
+  display: flex;
+  white-space: nowrap;
+  animation: scroll-marquee 20s linear infinite;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-right: 50px;
+  font-size: 18px;
+  color: #333;
+}
+@keyframes scroll-marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 /* Responsive */
 @media screen and (max-width: 576px) {
   .universal {
@@ -404,5 +432,8 @@ a {
   }
   .keep-tch {
     margin-top: 15px;
+  }
+  .marquee-container {
+    margin: 0 20px;
   }
 }
